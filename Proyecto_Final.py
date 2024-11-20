@@ -130,6 +130,10 @@ def mostrar_distancia_cm():
             plot_menu()
             break 
         time.sleep(0.5)
+        if button_menu.value():
+            buttom_plot_menu()
+            time.sleep(0.5)
+            break
 
 def mostrar_distancia_mm():
     print("Mostrando distancia en mm")
@@ -146,7 +150,12 @@ def mostrar_distancia_mm():
             print("Regresando al menú anterior")
             plot_menu()
             break  
-        time.sleep(0.5) 
+        time.sleep(0.5)
+        if button_menu.value():
+            buttom_plot_menu()
+            time.sleep(0.5)
+            break
+         
 # Funcion escape
 def buttom_plot_menu():
     plot_menu()
